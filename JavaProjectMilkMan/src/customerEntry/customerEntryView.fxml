@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customerEntry.customerEntryViewController">
+   <children>
+      <Label layoutX="140.0" layoutY="14.0" prefHeight="45.0" prefWidth="270.0" text="CUSTOMER ENTRY" textFill="#c70a0a">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="80.0" text="CUSTOMER NAME">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="121.0" text="MOBILE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="164.0" text="ADDRESS">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboName" editable="true" layoutX="190.0" layoutY="77.0" prefHeight="31.0" prefWidth="187.0" />
+      <Button layoutX="376.0" layoutY="77.0" mnemonicParsing="false" onAction="#doFetch" prefHeight="31.0" prefWidth="87.0" text="FETCH" textFill="#30089f">
+         <font>
+            <Font name="Yu Gothic Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtMobile" layoutX="191.0" layoutY="116.0" prefHeight="31.0" prefWidth="187.0" />
+      <TextField fx:id="txtAddress" layoutX="191.0" layoutY="156.0" prefHeight="31.0" prefWidth="187.0" />
+      <ImageView fitHeight="150.0" fitWidth="161.0" layoutX="383.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="415.0" layoutY="121.0" text="PROFILE PIC">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="profilePic" fitHeight="159.0" fitWidth="144.0" layoutX="393.0" layoutY="156.0">
+         <image>
+            <Image url="@../Signup/userinfo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="221.0" text="MILK  DETAILS" textFill="#1b0455">
+         <font>
+            <Font name="Webdings" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="275.0" text="Quantity">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="275.0" text="COW" textFill="#0f07a3">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="316.0" text="BUFFALO" textFill="#0f07a3">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="316.0" text="Quantity">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="264.0" layoutY="275.0" text="Price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="264.0" layoutY="316.0" text="Price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBuffaloQty" layoutX="168.0" layoutY="313.0" prefHeight="21.0" prefWidth="70.0" />
+      <TextField fx:id="txtCowQty" layoutX="168.0" layoutY="273.0" prefHeight="21.0" prefWidth="70.0" />
+      <TextField fx:id="txtCowPrice" layoutX="299.0" layoutY="273.0" prefHeight="21.0" prefWidth="70.0" />
+      <TextField fx:id="txtBuffaloPrice" layoutX="299.0" layoutY="314.0" prefHeight="21.0" prefWidth="70.0" />
+      <Label layoutX="14.0" layoutY="365.0" text="DATE OF START">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dtpDos" layoutX="188.0" layoutY="363.0" prefHeight="31.0" prefWidth="187.0" />
+      <Label fx:id="lblPath" layoutX="400.0" layoutY="367.0" />
+      <Button layoutX="420.0" layoutY="322.0" mnemonicParsing="false" onAction="#doBrowse" prefHeight="31.0" prefWidth="87.0" text="BROWSE" textFill="#30089f">
+         <font>
+            <Font name="Yu Gothic Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="94.0" layoutY="443.0" mnemonicParsing="false" onAction="#doNew" prefHeight="31.0" prefWidth="87.0" text="NEW" textFill="#30089f">
+         <font>
+            <Font name="Yu Gothic Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="198.0" layoutY="443.0" mnemonicParsing="false" onAction="#doSave" prefHeight="31.0" prefWidth="87.0" text="SAVE" textFill="#30089f">
+         <font>
+            <Font name="Yu Gothic Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="301.0" layoutY="443.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="31.0" prefWidth="87.0" text="UPDATE" textFill="#30089f">
+         <font>
+            <Font name="Yu Gothic Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="407.0" layoutY="443.0" mnemonicParsing="false" onAction="#doLeft" prefHeight="31.0" prefWidth="87.0" text="LEFT" textFill="#30089f">
+         <font>
+            <Font name="Yu Gothic Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblResult" layoutX="251.0" layoutY="502.0" textFill="#e90a0a" />
+      <ImageView fitHeight="72.0" fitWidth="81.0" layoutX="12.0" layoutY="422.0">
+         <image>
+            <Image url="@../directCustomer.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgcq" fitHeight="25.0" fitWidth="24.0" layoutX="238.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgbq" fitHeight="25.0" fitWidth="24.0" layoutX="239.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgcp" fitHeight="25.0" fitWidth="24.0" layoutX="371.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgbp" fitHeight="25.0" fitWidth="24.0" layoutX="371.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
